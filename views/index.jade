@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Desk
+  form#formDeskLight(name="desklight", method="post", action="/desklight")
+   ul
+   	li
+   		label(name="switch")
+   			input(type="checkbox")
+   			div(class="slider round")
