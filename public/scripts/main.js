@@ -1,6 +1,11 @@
 $(document).on('change', '#flip-1', function() {
     //Trigger post
     console.log($('#flip-1').val());
+    var data = { val : $('#flip-1').val()};
+
+    $.post('./desk',data, function(){
+
+    });
 });
 $(document).on('change', '#flip-2', function() {
     //Trigger post
