@@ -22,6 +22,15 @@ $(document).on("#slider-bed-red").on('slidestop', function(){
  	});
 });
 
+$(document).on("#slider-bed-green").on('slidestop', function(){
+	var value= $("#slider-bed-green").val();
+ 		console.log("Slider value: "+ value);
+ 	var data = {val : value};
+ 	$.post('./bed-green',data, function(data){
+
+ 	});
+});
+
 $(document).on("#slider-bed-blue").on('slidestop', function(){
 	var value= $("#slider-bed-blue").val();
  		console.log("Slider value: "+ value);
